@@ -16,7 +16,6 @@ refreshFrequency: 1000000
 # is passed in as a string. Whatever it returns will get rendered as HTML.
 render: (output) -> """
   <h1>Hi, #{output}</h1>
-  <h1>Hi, you fucking jewbag</h1>
   <p>
     Thanks for trying out Übersicht!
     This is an example widget to get you started.
