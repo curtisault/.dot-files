@@ -15,11 +15,20 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'exu/pgsql.vim'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 
-" Sets colourscheme
-colorscheme darkblue
+colorscheme spacegray "sets colourscheme
 
-" Turn on line numbers
-set number
+set noswapfile
+set number          "line numbers
+set cursorline      "highlight cursorline
+set ruler           "show line/column
+set scrolloff=4     "keep more lines on screen while scrolling
+set sidescroll=5    "horizontal scrolloff
+set list            "enable invisible characters
+set nowrap          "do not wrap lines by default
+set mouse=a         "use mouse in all modes
+
+
