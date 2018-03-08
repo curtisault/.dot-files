@@ -16,10 +16,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'exu/pgsql.vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 
-colorscheme spacegray "sets colourscheme
+colorscheme cobalt2 "sets colourscheme
 
 set noswapfile
 set number          "line numbers
