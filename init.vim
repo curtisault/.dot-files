@@ -17,6 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'exu/pgsql.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'itchyny/lightline.vim'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 
