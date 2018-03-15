@@ -17,6 +17,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'exu/pgsql.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-commentary'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 
