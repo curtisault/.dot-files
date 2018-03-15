@@ -19,6 +19,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Raimondi/delimitMate'
 call plug#end()
 
 
