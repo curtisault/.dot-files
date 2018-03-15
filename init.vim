@@ -36,3 +36,9 @@ set nowrap          "do not wrap lines by default
 set mouse=a         "use mouse in all modes
 
 
+" remap pane switching
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
