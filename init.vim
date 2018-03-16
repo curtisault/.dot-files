@@ -20,6 +20,18 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Raimondi/delimitMate'
+
+" deoplete languages
+Plug 'sebastianmarkow/deoplete-rust'
+Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+Plug 'mhartington/nvim-typescript', { 'for': 'typescript' }
+Plug 'pbogut/deoplete-elm'
+Plug 'fszymanski/deoplete-emoji'
+
+" wiki and markdown tools
+Plug 'vimwiki/vimwiki'
+Plug 'suan/vim-instant-markdown', { 'do': 'npm install -g instant-markdown-d' }
 call plug#end()
 
 " deoplete settings
