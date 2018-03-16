@@ -22,6 +22,10 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Raimondi/delimitMate'
 call plug#end()
 
+" deoplete settings
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#min_pattern_length = 1
+let g:deoplete#auto_complete_delay = 1
 
 colorscheme cobalt2 "sets colourscheme
 
