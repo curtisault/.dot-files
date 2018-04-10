@@ -37,7 +37,7 @@ Edit `/etc/systemd/logind.conf` and set `HandleLidSwitch` to `ignore`.
          * enter
          * w
 
-  9. `mkfs.ext4 /dev/sda1`
+  9. `# mkfs.ext4 /dev/sda1`
   10. `# mkfs.ext4 /dev/sda2`
   11. `# mount /dev/sda1 /mnt`
   12. `# mkdir /mnt/home`
