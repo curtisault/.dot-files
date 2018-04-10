@@ -22,7 +22,7 @@ Edit `/etc/systemd/logind.conf` and set `HandleLidSwitch` to `ignore`.
 
           * o (to create an empty DOS partition table)
           * n
-          * 1
+          * 1/enter
           * enter
           * +30G
           * w
@@ -32,9 +32,9 @@ Edit `/etc/systemd/logind.conf` and set `HandleLidSwitch` to `ignore`.
       `# fdisk /dev/sda`
 
          * n
-         * 2
+         * 2/enter
          * enter
-         * ebter
+         * enter
          * w
 
   9. `mkfs.ext4 /dev/sda1`
