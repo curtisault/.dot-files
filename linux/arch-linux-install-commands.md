@@ -45,8 +45,8 @@ Edit `/etc/systemd/logind.conf` and set `HandleLidSwitch` to `ignore`.
   14. `# pacstrap -i /mnt base`
   15. `# genfstab -U -p /mnt >> /mnt/etc/fstab`
   16. `# arch-chroot /mnt`
-  17. `# pacman -S openssh grub-bios linux-headers linux-lts linux-lts-headers`
-  18. If wireless: `# pacman -S dialog network-manager-applet networkmanager networkmanager-openvpn wireless_tools wpa_supplicant wpa_actiond`  
+  17. `# pacman -S openssh grub-bios linux-headers linux-lts linux-lts-headers dialog network-manager-applet networkmanager networkmanager-openvpn`
+  18. If wireless: `# pacman -S wireless_tools wpa_supplicant wpa_actiond`  
   19. `# mkinitcpio -p linux`
   20. `# mkinitcpio -p linux-lts`
   21. `# nano /etc/locale.gen` (uncomment en_US.UTF-8)
