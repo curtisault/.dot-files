@@ -59,7 +59,7 @@ Edit `/etc/systemd/logind.conf` and set `HandleLidSwitch` to `ignore`.
         * `# fallocate -l 2G /swapfile`
         * `# chmod 600 /swapfile`
         * `# mkswap /swapfile`
-        * `# echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab`
+        * `# echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab`
   28. `$ exit`
   29. `# umount -a`
   30. `# reboot`
