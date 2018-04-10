@@ -41,3 +41,5 @@ To find hardware spec run:
 `# su pacman -S lightdm`
 
 `# yaourt lightdm-slick-greeter`
+
+`# su systemctl enable lightdm`
