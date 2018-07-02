@@ -14,3 +14,8 @@
 	("melpa" . "https://melpa.org/packages/")))
 (package-initialize)
 
+;; Minimal UI
+(scroll-bar-mode -1)
+(tool-bar-mode   -1)
+(tooltip-mode    -1)
+
