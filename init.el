@@ -55,6 +55,15 @@
   (helm-mode 1))
 
 
+;; Projectile
+(use-package projectile
+  :ensure t
+  :init
+  (setq projectile-require-project-root nil)
+  :config
+  (projectile-mode 1))
+
+
 ;; Which Key
 (use-package which-key
   :ensure t
@@ -89,18 +98,28 @@
   "wx"  '(delete-window :which-key "delete window")
   ;; NeoTree
   "ft"  '(neotree-toggle :which-key "toggle neotree")
+  ;; UI
+  "ti"  '(text-scale-increase :which-key "text scale increase")
+  "td"  '(text-scale-decrease :which-key "text scale decrease")
   ;; Others
   "at"  '(ansi-term :which-key "open terminal")
 ))
 
 
-;; Projectile
-(use-package projectile
-  :ensure t
-  :init
-  (setq projectile-require-project-root nil)
-  :config
-  (projectile-mode 1))
+;; Language Deps and Niceties
+(use-package alchemist :ensure t)
+(use-package company :ensure t)
+(use-package elixir-mode :ensure t)
+(use-package flycheck :ensure t)
+(use-package flycheck-mix :ensure t)
+(use-package flycheck-credo :ensure t)
+(use-package ggtags :ensure t)
+(use-package ob-elixir :ensure t)
+(use-package smartparens :ensure t)
+
+
+;; Popup Windows to Mini-buffers
+(use-package popwin :ensure t)
 
 
 ;; All The Icons
@@ -128,10 +147,11 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (which-key use-package helm evil-escape doom-themes))))
+    (markdown-mode magit alchemist ag helm-ag which-key use-package helm evil-escape doom-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
