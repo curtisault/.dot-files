@@ -40,3 +40,14 @@
   :config
   (load-theme 'doom-one t))
 
+
+;; Helm
+(use-package helm
+  :ensure t
+  :init
+  (setq helm-mode-fuzzy-match t)
+  (setq helm-completion-in-region-fuzzy-match t)
+  (setq helm-candidate-number-list 50)
+  :config
+  (helm-mode 1))
+
