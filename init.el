@@ -33,3 +33,10 @@
   :config
   (evil-escape-mode 1))
 
+
+;; Theme
+(use-package doom-themes
+  :ensure t
+  :config
+  (load-theme 'doom-one t))
+
