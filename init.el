@@ -51,6 +51,16 @@
   :config
   (helm-mode 1))
 
+
+;; Projectile
+(use-package projectile
+  :ensure t
+  :init
+  (setq projectile-require-project-root nil)
+  :config
+  (projectile-mode 1))
+
+
 ;; Which Key
 (use-package which-key
   :ensure t
