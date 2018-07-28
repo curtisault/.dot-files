@@ -132,9 +132,6 @@
   "w."  '(split-window-below :which-key "split bottom")
   "wd"  '(delete-window :which-key "delete window")
 
-  ;; NeoTree
-  "ft"  '(neotree-toggle :which-key "toggle neotree")
-
   ;; UI
   "ti"  '(text-scale-increase :which-key "text scale increase")
   "td"  '(text-scale-decrease :which-key "text scale decrease")
@@ -163,13 +160,6 @@
 
 ;; All The Icons
 (use-package all-the-icons :ensure t)
-
-
-;; NeoTree
-(use-package neotree
-  :ensure t
-  :init
-(setq neo-theme (if (display-graphic-p) 'icons 'arrow)))
 
 
 ;; Powerline
