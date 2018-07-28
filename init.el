@@ -45,6 +45,7 @@
   :config
   (load-theme 'doom-one t))
 
+
 ;; Helm
 (use-package helm
   :ensure t
@@ -74,6 +75,15 @@
   (setq projectile-require-project-root nil)
   :config
   (projectile-mode 1))
+
+
+;; Helm Projectile
+(use-package helm-projectile
+  :ensure t
+  :init
+  (setq helm-projectile-fuzzy-match t)
+  :config
+  (helm-projectile-on))
 
 
 ;; Which Key
