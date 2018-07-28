@@ -30,15 +30,6 @@
   (evil-mode 1))
 
 
-;; evil-escape
-(use-package evil-escape
-  :ensure t
-  :init
-  (setq-default evil-escape-key-sequence "jk")
-  :config
-(evil-escape-mode 1))
-
-
 ;; Theme
 (use-package doom-themes
   :ensure t
@@ -82,6 +73,7 @@
   :ensure t
   :init
   (setq helm-projectile-fuzzy-match t)
+  (setq projectile-enable-caching t)
   :config
   (helm-projectile-on))
 
