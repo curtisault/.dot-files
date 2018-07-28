@@ -20,6 +20,7 @@
 (tool-bar-mode    -1)
 (tooltip-mode     -1)
 (global-linum-mode 1)
+(add-to-list 'default-frame-alist '(font . "Hack"))
 
 
 ;; Vim mode
