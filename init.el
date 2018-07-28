@@ -172,6 +172,17 @@
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow)))
 
 
+;; Powerline
+(use-package spaceline
+  :ensure t
+  :init
+  (setq powerline-default-separator 'slant)
+  :config
+  (spaceline-emacs-theme)
+  (spaceline-toggle-minor-modes-off)
+  (spaceline-toggle-buffer-size-off)
+  (spaceline-toggle-evil-state-on))
+
 ;; Fancy titlebar for MacOS
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
 (add-to-list 'default-frame-alist '(ns-appearance . dark))
