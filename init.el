@@ -109,13 +109,19 @@
   :non-normal-prefix "M-SPC"
   "TAB" '(switch-to-prev-buffer :which-key "previous buffer")
   "SPC" '(helm-M-x :which-key "M-x")
+
   ;; Files
   "ff"  '(helm-find-files :which-key "find files")
   "fs"  '(save-buffer :which-key "save file")
+
   ;; Projects
-  "pf"  '(project-find-file :which-key "save file")
+  "pf"  '(project-find-file :which-key "find project file")  
+  "pp"  '(helm-projectile-switch-project :which-key "switch project")
+  "pb"  '(helm-projectile-switch-to-buffer :which-key "switch buffer")
+
   ;; Buffers
   "bb"  '(helm-mini :which-key "buffers list")
+
   ;; Window
   "wl"  '(windmove-right :which-key "move right")
   "wh"  '(windmove-left :which-key "move left")
@@ -124,11 +130,14 @@
   "w/"  '(split-window-right :which-key "split right")
   "w."  '(split-window-below :which-key "split bottom")
   "wd"  '(delete-window :which-key "delete window")
+
   ;; NeoTree
   "ft"  '(neotree-toggle :which-key "toggle neotree")
+
   ;; UI
   "ti"  '(text-scale-increase :which-key "text scale increase")
   "td"  '(text-scale-decrease :which-key "text scale decrease")
+
   ;; Global
   "at"  '(ansi-term :which-key "open terminal")
   "qq"  '(kill-emacs :which-key "quit")
