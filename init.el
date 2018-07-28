@@ -118,6 +118,7 @@
   "pf"  '(project-find-file :which-key "find project file")  
   "pp"  '(helm-projectile-switch-project :which-key "switch project")
   "pb"  '(helm-projectile-switch-to-buffer :which-key "switch buffer")
+  "pr"  '(helm-show-kill-ring :which-key "show kill ring")
 
   ;; Buffers
   "bb"  '(helm-mini :which-key "buffers list")
