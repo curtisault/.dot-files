@@ -151,10 +151,6 @@
 (use-package popwin :ensure t)
 
 
-;; All The Icons
-(use-package all-the-icons :ensure t)
-
-
 ;; Powerline
 (use-package spaceline
   :ensure t
