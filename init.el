@@ -166,6 +166,13 @@
   (spaceline-toggle-buffer-size-off)
   (spaceline-toggle-evil-state-on))
 
+ 
+;; Flycheck
+(use-package flycheck
+  :ensure t
+:init (global-flycheck-mode))
+
+
 ;; Fancy titlebar for MacOS
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
 (add-to-list 'default-frame-alist '(ns-appearance . dark))
