@@ -107,7 +107,7 @@
   "fs"  '(save-buffer :which-key "save file")
 
   ;; Projects
-  "pf"  '(project-find-file :which-key "find project file")  
+  "pf"  '(projectile-find-file :which-key "project find file")  
   "pp"  '(helm-projectile-switch-project :which-key "switch project")
   "pb"  '(helm-projectile-switch-to-buffer :which-key "switch buffer")
   "pr"  '(helm-show-kill-ring :which-key "show kill ring")
