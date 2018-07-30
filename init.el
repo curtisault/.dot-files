@@ -114,6 +114,7 @@
 
   ;; Buffers
   "bb"  '(helm-mini :which-key "buffers list")
+  "bd"  '(kill-this-buffer :which-key "kill buffer")
 
   ;; Window
   "wl"  '(windmove-right :which-key "move right")
