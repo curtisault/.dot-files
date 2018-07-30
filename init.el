@@ -49,7 +49,7 @@
 	helm-semantic-fuzzy-match t
 	helm-imenu-fuzzy-match t
 	helm-completion-in-region-fuzzy-match t
-	helm-candidate-number-list 80
+	helm-candidate-number-list 25
 	helm-split-window-in-side-p t
 	helm-move-to-line-cycle-in-source t
 	helm-echo-input-in-header-line t
