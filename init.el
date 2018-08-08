@@ -34,23 +34,14 @@
 (use-package doom-themes
   :ensure t
   :config
-  (load-theme 'doom-one t))
+  (load-theme 'doom-vibrant t))
 
 
 ;; Helm
 (use-package helm
   :ensure t
   :init
-  (setq helm-M-x-fuzzy-match t
-	helm-mode-fuzzy-match t
-	helm-buffers-fuzzy-matching t
-	helm-recentf-fuzzy-match t
-	helm-locate-fuzzy-match t
-	helm-semantic-fuzzy-match t
-	helm-imenu-fuzzy-match t
-	helm-completion-in-region-fuzzy-match t
-	helm-candidate-number-list 25
-	helm-split-window-in-side-p t
+  (setq helm-split-window-inside-p t
 	helm-move-to-line-cycle-in-source t
 	helm-echo-input-in-header-line t
 	helm-autoresize-max-height 0
@@ -75,7 +66,7 @@
   (setq helm-projectile-fuzzy-match t)
   (setq projectile-enable-caching t)
   :config
-  (helm-projectile-on))
+(helm-projectile-on))
 
 
 ;; Which Key
@@ -129,6 +120,9 @@
   "ti"  '(text-scale-increase :which-key "text scale increase")
   "td"  '(text-scale-decrease :which-key "text scale decrease")
 
+  ;; Lisp
+  "le"  '(eval-last-sexp :which-key "emacs-lisp eval line")
+
   ;; Global
   "at"  '(ansi-term :which-key "open terminal")
   "qq"  '(kill-emacs :which-key "quit")
@@ -162,13 +156,6 @@
   (spaceline-toggle-buffer-size-off)
   (spaceline-toggle-evil-state-on))
 
- 
-;; Flycheck
-(use-package flycheck
-  :ensure t
-  :init
-  (global-flycheck-mode))
-
 
 ;; Fancy titlebar for MacOS
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
@@ -191,4 +178,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
 
